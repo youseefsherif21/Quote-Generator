@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Caveat:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+
+    <div class="container py-5 vh-100 justify-content-center d-flex align-items-center">
+        <div class="text-container">
+            <div class="inner p-4 text-center ">
+                <i class="fa-solid fa-quote-right text-primary fs-2"></i>
+                <h3 class="fw-bold text-primary fs-2">Quote of the Day</h1>
+                    <p>Click the button to see a new quote!</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary fs-5 fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop" onclick="generateQuote()">
+                        click here
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 head-text text-danger" id="staticBackdropLabel">Quote Details</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h4 id="author" class="author-text"></h4>
+                                    <p id="quote" class="quote-text"></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" onclick="generateQuote()">next quote</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

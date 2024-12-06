@@ -1,0 +1,36 @@
+.text-container{
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 40%;
+
+    .inner{
+        i{
+            font-size: 20px;
+        }
+        h3{
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 30px;
+            text-transform: uppercase;
+            word-spacing: 3px;
+        }
+        p{
+            font-family: "Sour Gummy", sans-serif;
+        }
+        button{
+            font-family: "Caveat", cursive;
+        }
+    }
+}
+
+.btn{
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-padding-y: .12rem;
+}
+
+.author-text{
+    font-family: "Anton SC", sans-serif;
+}
+
+.head-text{
+    font-family: "Anton SC", sans-serif;
+}
